@@ -1,0 +1,22 @@
+.d-flex {
+    display: flex;
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  
+  .form-container {
+    margin-left: 50px; /* adjust as needed */
+  }
+  
+  @media (max-width: 767px) {
+    .d-flex {
+      flex-wrap: wrap;
+    }
+  
+    .form-container {
+      margin: 0;
+    }
+  }
+  
