@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import noteContext from '../context/notes/noteContext';
 import AddNote from './AddNote';
 import Noteitem from './Noteitem';
+import '../components/Notes.css'
 // import AddNote from './AddNote';
 
 const Notes = (props) => {
@@ -50,7 +51,7 @@ const Notes = (props) => {
 
 
                     <div className='col-md-8'>
-                        <div className='row my-3'>
+                        <div className='row my-3 parent-container'>
                             <h2>Your Tasks</h2>
                             <div className="container mx-2">
                                 {notes.length === 0 &&'No Notes to Display'}

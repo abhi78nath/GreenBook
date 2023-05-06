@@ -37,21 +37,32 @@ const Login = (props) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value})
     }
     return (
-        <div className='mt-2'>
-            <h2 className='my-2'>Login to add your notes</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value={credentials.email} onChange={onChange}/>
-                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword1" name='password' value={credentials.password} onChange={onChange}/>
-                </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
-            </form>
+        <div className='container mt-2' >
+  <div className='row align-items-center' style={{ height: '72vh' }}>
+    <div className='col-md-4'>
+      <h2 className='my-2'>Login to add your notes</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value={credentials.email} onChange={onChange}/>
+          <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
         </div>
+        <div className="mb-3">
+          <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+          <input type="password" className="form-control" id="exampleInputPassword1" name='password' value={credentials.password} onChange={onChange}/>
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div className='col-md-8 d-flex justify-content-center'>
+      <div style={{ flexDirection: 'column' }}>
+        <h2 className='my-2'>Welcome To</h2>
+        <p style={{textAlign: 'center', color: 'green', fontWeight: 700, fontSize: 'xx-large'}}>GreenBook</p>
+      </div>
+    </div>
+  </div>
+</div>
+
         // <div className="d-flex justify-content-end">
         //     <div className='mt-2'>
         //         <h2 className='my-2'>Login to add your notes</h2>

@@ -90,9 +90,9 @@ const Signup = (props) => {
       <div style={{ flexDirection: 'column' }}>
         <h2 className='my-2'>Welcome To</h2>
         <p style={{textAlign: 'center',
-    color: 'green',
-    fontWeight: 700,
-    fontSize: 'xx-large'}}>GreenBook</p>
+            color: 'green',
+            fontWeight: 700,
+            fontSize: 'xx-large'}}>GreenBook</p>
 
 
       </div>
