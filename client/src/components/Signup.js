@@ -64,7 +64,7 @@ const Signup = (props) => {
     <div className='container mt-2'>
   <div className='row'>
     <div className='col-md-4'>
-      <h2 className='my-2'>Create an account to add your notes</h2>
+      <h2 className='my-2'>Register to use <span style={{color:'green'}}>GreenBook</span></h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
@@ -83,7 +83,7 @@ const Signup = (props) => {
           <label htmlFor="cpassword" className="form-label">Confirm Password</label>
           <input type="password" className="form-control" id="cpassword" onChange={onChange} name="cpassword" required minLength={5}/>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-success">Submit</button>
       </form>
     </div>
     <div className='col-md-8 d-flex justify-content-center align-items-center'>

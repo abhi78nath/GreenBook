@@ -17,7 +17,7 @@ const AddNote = () => {
     }
     return (
         <div className='container my-2'>
-            <h2>Add a Task</h2>
+            <h2 style={{color:'green'}}>Add a Task</h2>
             <form>
                 <div className="mb-3">
                     <label htmlFor="title">Title</label>
@@ -33,7 +33,7 @@ const AddNote = () => {
                     <input type="date" className="form-control" value={note.date} id="date" name="date" onChange={onChange} required/>
                 </div>
                 
-                <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
+                <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-success" onClick={handleClick}>Add Note</button>
             </form>
 
 

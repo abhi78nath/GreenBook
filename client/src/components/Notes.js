@@ -51,8 +51,8 @@ const Notes = (props) => {
 
 
                     <div className='col-md-8'>
+                        <h2 style={{color:'green'}}>Your Tasks</h2>
                         <div className='row my-3 parent-container'>
-                            <h2>Your Tasks</h2>
                             <div className="container mx-2">
                                 {notes.length === 0 &&'No Notes to Display'}
                             </div>
@@ -88,7 +88,7 @@ const Notes = (props) => {
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="edate" className="form-label">date</label>
-                                            <input type="text" className="form-control"  value={note.edate} id="edate" name="edate" onChange={onChange} />
+                                            <input type="date" className="form-control"  value={note.edate} id="edate" name="edate" onChange={onChange} />
                                         </div>
 
                                         
@@ -96,7 +96,7 @@ const Notes = (props) => {
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" ref={refClose} className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button disabled={note.etitle.length<5 || note.edescription.length<5} onClick = {handleClick} type="button" className="btn btn-primary">Update Note</button>
+                                    <button disabled={note.etitle.length<5 || note.edescription.length<5} onClick = {handleClick} type="button" className="btn btn-warning">Update Note</button>
                                 </div>
                             </div>
                         </div>

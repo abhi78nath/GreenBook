@@ -1,7 +1,7 @@
 .parent-container {
     overflow-y: scroll;
     /* max-height: calc(100vh - 200px); */
-    max-height: calc(100vh - 138px);
+    max-height: calc(100vh - 177px);
     overflow-x: hidden;
   }
   
