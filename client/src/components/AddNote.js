@@ -16,7 +16,7 @@ const AddNote = () => {
         setNote({ ...note, [e.target.name]: e.target.value})
     }
     return (
-        <div className='container my-2'>
+        <div className='container my-2'  >
             <h2 style={{color:'green'}}>Add a Task</h2>
             <form>
                 <div className="mb-3">

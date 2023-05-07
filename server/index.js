@@ -20,8 +20,8 @@ app.use('/api/notes', require('./routes/notes'))
 app.get('/', (req,res) =>{
     res.send("Welcome to notebook api");
 })
-app.listen(port, ()=>{
-    console.log(`Noty backend Started at http://localhost:${port}`)
-})
+// app.listen(port, ()=>{
+//     console.log(`Noty backend Started at http://localhost:${port}`)
+// })
 
-// module.exports = app
+module.exports = app
