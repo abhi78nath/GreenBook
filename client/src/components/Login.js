@@ -5,8 +5,8 @@ import '../components/Login.css'
 const Login = (props) => {
     const [credentials, setCredentials] = useState({email:"", password:""})
     let navigate = useNavigate();
-    // const host = "https://ruyaqr.deta.dev"
-    const host = "http://localhost:5000"
+    const host = "https://greenbook-server-qn9l.onrender.com"
+    // const host = "http://localhost:5000"
     const handleSubmit = async(e)=>{
         e.preventDefault();
         const response = await fetch(`${host}/api/auth/login`, {
